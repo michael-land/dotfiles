@@ -9,12 +9,12 @@
 # The b key on the bottom row
 
 # Basic binds
-#super + Return
-#	$TERMINAL
-#super + shift + q
-# kill -9 `xdotool getwindowfocus getwindowpid`
+super + Return
+	$TERMINAL
+super + shift + q
+    kill -9 `xdotool getwindowfocus getwindowpid`
 #super + d
-	dmenu_run
+#	dmenu_run
 super + r
 	$TERMINAL -e $FILE
 super + e
