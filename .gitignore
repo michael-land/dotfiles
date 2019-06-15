@@ -23,6 +23,11 @@
 
 !.config/
 .config/*
+
+!.config/bookmarks
+!.config/directories
+!.config/inputrc
+
 !.config/fontconfig/
 .config/fontconfig/*
 !.config/fontconfig/fonts.conf
@@ -56,3 +61,15 @@
 !.config/nvim/
 .config/nvim/*
 !.config/nvim/init.vim
+
+!.config/lf/
+.config/lf/*
+!.config/lf/lfrc
+!.config/lf/scope
+
+!.config/packages/
+.config/packages/*
+!.config/packages/node-packages
+!.config/packages/python-packages
+!.config/packages/yay-packages
+
