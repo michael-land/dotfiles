@@ -3,7 +3,6 @@ bluez
 bluez-utils
 chromium
 composer
-dialog
 fcitx
 fcitx-configtool
 fcitx-googlepinyin
@@ -34,7 +33,6 @@ sxiv
 tree
 ttf-symbola
 unzip
-wpa_supplicant
 xclip
 xf86-video-intel
 xorg-server
