@@ -35,14 +35,16 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'syntax-highlighting' \
+  'autosuggestions' \
+  'prompt' \
 
 #
 # Autosuggestions
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found ''
 
 #
 # Completions
@@ -104,7 +106,7 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 
 # Set the Pacman frontend.
-# zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yay'
 
 #
 # Prompt
@@ -221,4 +223,4 @@ zstyle ':prezto:module:prompt' theme 'pure'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-zstyle ':prezto:module:utility' safe-ops 'yes'
+#zstyle ':prezto:module:utility' safe-ops 'yes'
