@@ -10,7 +10,6 @@ fcitx-googlepinyin
 fcitx-gtk2
 fcitx-gtk3
 fcitx-qt5
-firefox
 fzf
 git
 htop
@@ -41,5 +40,6 @@ xclip
 xf86-video-intel
 xorg-server
 xorg-xinit
+yarn
 yay
 zsh
