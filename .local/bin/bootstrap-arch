@@ -1,24 +1,29 @@
 #!/bin/sh
 
-git clone https://aur.archlinux.org/yay.git
+git clone https://aur.archlinux.org/yay.git ~/.config/yay
 cd yay
 makepkg -si
 
+if [ ! -d '~/Workspace']; then
+    mkdir ~/Workspace
+fi
 
-mkdir ~/workspace
-mkdir ~/downloads
+if [ ! -d '~/Downloads']; then
+    mkdir ~/Downloads
+fi
 
-yay -S xorg-server xorg-xinit bluez bluez-utils lf zsh fcitx fcitx-googlepinyin fcitx-configtool fcitx-gtk3 chromium neovim-nightly noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra python-pip firefox unzip ttf-symbola xclip openssh webkit2gtk gcr xf86-video-intel xorg-xprop
+yay -S $(<$HOME/.config/packages/yay-packages)
 
 chsh -s /bin/zsh && zsh
 
 git clone https://github.com/LukeSmithxyz/dwm.git ~/workspace/dwm
 cd ~/workspace/dwm && sudo make clean install
+
 git clone https://github.com/LukeSmithxyz/st.git ~/workspace/st
 cd ~/workspace/st && sudo make clean install
-git clone https://github.com/LukeSmithxyz/surf.git ~/workspace/surf
-cd ~/workspace/surf && sudo make clean install
 
 curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir "$HOME/.config/fnm" --skip-shell
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+
