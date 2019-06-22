@@ -51,8 +51,7 @@ super + shift + BackSpace
 	prompt "Reboot computer?" "sudo -A shutdown -r now"
 super + shift + Escape
 	prompt 'Leave Xorg?' 'killall Xorg'
-super + x
-	mpc pause; pauseallmpv; i3lock -e -f -c 1d2021; xset dpms force off
+
 XF86Launch1
 	xset dpms force off
 XF86TouchpadToggle
@@ -65,7 +64,7 @@ XF86TouchpadOn
 # Recording
 # Take screenshot
 Print
-	maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+	maim ~/media/pic-full-$(date '+%y%m%d-%H%M-%S').png
 # Pick screenshot type
 shift + Print
 	maimpick
@@ -135,10 +134,6 @@ XF86Mail
 XF86MyComputer
 	$TERMINAL -e $FILE /
 
-# Function keys
-# Show readme
-super + F1
-	groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -
 # super + F2 is mapped to restart dwm.
 # Change display
 super + F3
@@ -151,7 +146,7 @@ super + F6
 	torwrap
 # toggle torrent daemon
 super + F7
-	td-togggle
+	td-toggle
 # sync email
 super + F8
 	mailsync

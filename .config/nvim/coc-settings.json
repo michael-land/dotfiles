@@ -1,0 +1,12 @@
+{
+  "scss.validate": false,  
+  "python.formatting.blackPath": "/home/michael/.local/bin/black",
+  "python.linting.flake8Enabled": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "php",
+    "json",
+    "css",
+    "typescriptreact",
+    "typescript"
+  ]
+}

@@ -6,4 +6,7 @@ export QT_IM_MODULE=fcitx
 
 fcitx &
 sxhkd &
+dwmbar &		# script for updating the status bar
 xset r rate 300 50 &
+
+

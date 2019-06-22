@@ -62,8 +62,15 @@
 !.config/nvim/
 .config/nvim/*
 !.config/nvim/init.vim
+!.config/nvim/coc-settings.json
+!.config/nvim/partial
+.config/nvim/partial/*
+!.config/nvim/partial/coc.vim
+!.config/nvim/partial/defx.vim
+!.config/nvim/partial/plugins.vim
+!.config/nvim/partial/settings.vim
 
-!.config/lf/
+!.config/lf
 .config/lf/*
 !.config/lf/lfrc
 !.config/lf/scope
