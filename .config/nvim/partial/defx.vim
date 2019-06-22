@@ -1,5 +1,5 @@
 
-nnoremap <silent><leader>ft :Defx -split=vertical -winwidth=50 -direction=topleft -columns=mark:indent:filename:type -search=`expand('%:p')` -toggle=1<CR>
+nnoremap <silent><leader>ft :Defx -split=vertical -winwidth=30 -direction=topleft -columns=mark:indent:filename:type -search=`expand('%:p')` -toggle=1<CR>
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     " Define mappings

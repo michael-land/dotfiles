@@ -8,5 +8,6 @@
     "css",
     "typescriptreact",
     "typescript"
-  ]
+  ],
+  "coc.preferences.hoverTarget": "echo"
 }

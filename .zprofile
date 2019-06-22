@@ -13,7 +13,7 @@ export ZDOTDIR="$HOME/.config/zsh"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 
 export KEYTIMEOUT=1
-export GDK_SCALE=1
+export GDK_SCALE=2
 export TERMINAL="st"
 export TERM="xterm"
 export OPENER="nvim"

@@ -21,6 +21,7 @@
 !.local/bin/
 .local/bin/*
 !.local/bin/bootstrap-arch
+!.local/bin/monitor
 
 !.config/
 .config/*

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+
+if [ $1 = "4k" ]; then
+    echo "4k"
+    sed -i 's/pixelsize=22/pixelsize=36/g' ~/workspace/st/config.h
+    sed -i 's/monospace:size=18/monospace:size=24/g' ~/workspace/dwm/config.h
+    sed -i 's/size=18/size=24/g' ~/workspace/dmenu/config.h
+    sed -i 's/GDK_SCALE=1/GDK_SCALE=2/g' ~/.zprofile
+    sed -i 's/xft.dpi: 96/xft.dpi: 192/g' ~/.zprofile
+else
+    echo "2k"
+    sed -i 's/pixelsize=36/pixelsize=22/g' ~/workspace/st/config.h
+    sed -i 's/monospace:size=24/monospace:size=18/g' ~/workspace/dwm/config.h
+    sed -i 's/size=24/size=18/g' ~/workspace/dmenu/config.h
+    sed -i 's/GDK_SCALE=2/GDK_SCALE=1/g' ~/.zprofile
+    sed -i 's/xft.dpi: 192/xft.dpi: 96/g' ~/.zprofile
+fi
+
+
+cd ~/workspace/st && sudo make clean install
+cd ~/workspace/dwm && sudo make clean install
+cd ~/workspace/dmenu && sudo make clean install
+
+# Logout to make change effect.
+killall dwm
