@@ -22,8 +22,8 @@
 #git clone https://github.com/LukeSmithxyz/st.git ~/workspace/st
 #cd ~/workspace/st && sudo make clean install
 #
-#curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir "$HOME/.config/fnm" --skip-shell
+#curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir "$HOME/.local/share/fnm" --skip-shell
 #
-#git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.config/zsh/.zprezto"
+#git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.local/share/zprezto"
 
 
